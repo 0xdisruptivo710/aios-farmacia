@@ -12,7 +12,7 @@ const testimonials = [
 {
   name: "Dr. Carlos Mendes",
   role: "Proprietário — Farmácia Vida Natural",
-  text: "Em 3 meses, saímos de 15 para 52 pedidos por dia. O sistema de recompra mudou completamente nosso fluxo de caixa."
+  text: "Em 3 meses, saímos de 7 para 25 pedidos por dia. O sistema de recompra mudou completamente nosso fluxo de caixa."
 },
 {
   name: "Dra. Ana Paula Ribeiro",
