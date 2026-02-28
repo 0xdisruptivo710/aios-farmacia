@@ -24,7 +24,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-2 mb-8">
 
-            <Shield className="w-4 h-4 text-gold" />
+            <Shield className="text-gold w-[33px] h-[33px]" />
             <span className="font-medium text-gold text-3xl">Exclusivo para Farmácias de Manipulação</span>
           </motion.div>
 

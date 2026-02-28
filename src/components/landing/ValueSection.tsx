@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
 import { DollarSign, ArrowRight } from "lucide-react";
 
-const ValueSection = () => (
-  <section className="py-20 lg:py-28 bg-background">
+const ValueSection = () =>
+<section className="py-20 lg:py-28 bg-background">
     <div className="container">
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="max-w-3xl mx-auto"
-      >
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="max-w-3xl mx-auto">
+
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-serif text-foreground mb-4">
-            Faça as contas: <span className="text-primary">o retorno é inevitável</span>
+            Faça as contas: <span className="text-primary text-4xl">o retorno é inevitável</span>
           </h2>
         </div>
 
@@ -58,7 +58,7 @@ const ValueSection = () => (
         </div>
       </motion.div>
     </div>
-  </section>
-);
+  </section>;
+
 
 export default ValueSection;

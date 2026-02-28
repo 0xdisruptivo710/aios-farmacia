@@ -18,7 +18,7 @@ const StepsSection = () =>
       transition={{ duration: 0.6 }}
       className="text-center mb-14">
 
-        <h2 className="text-3xl lg:text-4xl font-serif mb-4">
+        <h2 className="lg:text-4xl font-serif mb-4 text-5xl">
           Como funciona <span className="text-gradient-gold">na prática</span>
         </h2>
         <p className="text-navy-foreground/70 text-lg max-w-xl mx-auto font-light">Um processo claro e estruturado do diagnóstico ao crescimento contínuo.
