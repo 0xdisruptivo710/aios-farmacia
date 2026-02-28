@@ -6,7 +6,7 @@ import BeforeAfterSection from "@/components/landing/BeforeAfterSection";
 import MethodSection from "@/components/landing/MethodSection";
 import StepsSection from "@/components/landing/StepsSection";
 import ValueSection from "@/components/landing/ValueSection";
-import GuaranteeSection from "@/components/landing/GuaranteeSection";
+
 import CTASection from "@/components/landing/CTASection";
 import Footer from "@/components/landing/Footer";
 
@@ -20,7 +20,7 @@ const Index = () => (
     <MethodSection />
     <StepsSection />
     <ValueSection />
-    <GuaranteeSection />
+    
     <CTASection />
     <Footer />
   </main>
