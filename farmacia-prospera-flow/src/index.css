@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 20 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 10%;
+
+    --primary: 156 25% 23%;
+    --primary-foreground: 40 33% 97%;
+
+    --secondary: 34 25% 93%;
+    --secondary-foreground: 20 10% 20%;
+
+    --muted: 34 18% 93%;
+    --muted-foreground: 25 5% 45%;
+
+    --accent: 32 40% 57%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 40% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 34 18% 88%;
+    --input: 34 18% 85%;
+    --ring: 156 25% 23%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 20 10% 10%;
+    --sidebar-primary: 156 25% 23%;
+    --sidebar-primary-foreground: 40 33% 97%;
+    --sidebar-accent: 34 25% 92%;
+    --sidebar-accent-foreground: 20 10% 20%;
+    --sidebar-border: 34 18% 88%;
+    --sidebar-ring: 156 25% 23%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+  }
+
+  ::selection {
+    background: hsl(32 40% 57% / 0.2);
+    color: hsl(20 10% 10%);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-body {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .text-gradient-sage {
+    background: linear-gradient(135deg, hsl(156 25% 23%) 0%, hsl(160 20% 35%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-bronze {
+    background: linear-gradient(135deg, hsl(32 40% 50%) 0%, hsl(28 45% 60%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-section-warm {
+    background-color: hsl(34 30% 94%);
+  }
+
+  .bg-section-dark {
+    background: linear-gradient(160deg, hsl(156 28% 16%) 0%, hsl(160 32% 12%) 100%);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 1px 12px -2px rgba(28, 25, 23, 0.06);
+  }
+
+  .shadow-lifted {
+    box-shadow: 0 8px 40px -8px rgba(28, 25, 23, 0.12);
+  }
+
+  .shadow-card-hover {
+    box-shadow: 0 12px 48px -12px rgba(28, 25, 23, 0.14);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(40 33% 97%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(34 18% 82%);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(34 18% 70%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
