@@ -1,12 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, TrendingUp, Users, Award } from "lucide-react";
 
-const HeroSection = () => {
-  const scrollToCTA = () => {
-    document.getElementById("cta-final")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  return (
+const HeroSection = () => (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Soft organic shapes */}
       <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] rounded-full bg-sage-100/60 blur-[120px]" />
@@ -76,13 +71,15 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <button
-              onClick={scrollToCTA}
+            <a
+              href="https://wa.me/351961342444?text=Ol%C3%A1%21%20Quero%20mais%20pedidos%20na%20minha%20farm%C3%A1cia%20de%20manipula%C3%A7%C3%A3o.%20Podem%20me%20explicar%20como%20funciona%20o%20sistema%3F"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 bg-primary text-primary-foreground font-body font-medium px-10 py-4 rounded-full text-[15px] tracking-wide shadow-soft hover:shadow-lifted hover:bg-sage-800 transition-all duration-500"
             >
               Quero Mais Pedidos na Minha Farmácia
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
+            </a>
           </motion.div>
 
           {/* Trust indicators */}
@@ -114,7 +111,6 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+);
 
 export default HeroSection;

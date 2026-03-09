@@ -45,7 +45,7 @@ const CTASection = () => (
         </p>
 
         <motion.a
-          href="https://wa.me/5500000000000?text=Olá! Quero solicitar meu diagnóstico estratégico gratuito."
+          href="https://wa.me/351961342444?text=Ol%C3%A1%21%20Quero%20solicitar%20meu%20diagn%C3%B3stico%20estrat%C3%A9gico%20gratuito%20para%20a%20minha%20farm%C3%A1cia%20de%20manipula%C3%A7%C3%A3o."
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.02 }}
