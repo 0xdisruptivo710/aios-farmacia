@@ -2,7 +2,7 @@ import Header from "@/components/landing/Header";
 import HeroSection from "@/components/landing/HeroSection";
 import PainSection from "@/components/landing/PainSection";
 import ProblemSection from "@/components/landing/ProblemSection";
-import ProofSection from "@/components/landing/ProofSection";
+
 import BeforeAfterSection from "@/components/landing/BeforeAfterSection";
 import MethodSection from "@/components/landing/MethodSection";
 import StepsSection from "@/components/landing/StepsSection";
@@ -16,7 +16,7 @@ const Index = () => (
     <HeroSection />
     <PainSection />
     <ProblemSection />
-    <ProofSection />
+
     <BeforeAfterSection />
     <MethodSection />
     <StepsSection />
