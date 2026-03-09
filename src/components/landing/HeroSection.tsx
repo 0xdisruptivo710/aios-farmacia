@@ -21,7 +21,7 @@ const HeroSection = () => {
         className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-28 bg-gradient-to-b from-transparent via-sand-400/60 to-transparent origin-top"
       />
 
-      <div className="container relative z-10 py-28 lg:py-40">
+      <div className="container relative z-10 pt-36 pb-28 lg:pt-48 lg:pb-40">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div

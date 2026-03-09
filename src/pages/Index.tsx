@@ -1,3 +1,4 @@
+import Header from "@/components/landing/Header";
 import HeroSection from "@/components/landing/HeroSection";
 import PainSection from "@/components/landing/PainSection";
 import ProblemSection from "@/components/landing/ProblemSection";
@@ -11,6 +12,7 @@ import Footer from "@/components/landing/Footer";
 
 const Index = () => (
   <main className="overflow-hidden">
+    <Header />
     <HeroSection />
     <PainSection />
     <ProblemSection />
