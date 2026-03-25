@@ -1,92 +1,116 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-pharmacy.jpg";
-import { Shield, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, Sparkles, TrendingUp, Users, Award } from "lucide-react";
 
-const HeroSection = () => {
-  const scrollToCTA = () => {
-    document.getElementById("cta-final")?.scrollIntoView({ behavior: "smooth" });
-  };
+const HeroSection = () => (
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Soft organic shapes */}
+      <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] rounded-full bg-sage-100/60 blur-[120px]" />
+      <div className="absolute bottom-[-15%] left-[-8%] w-[500px] h-[500px] rounded-full bg-bronze-100/50 blur-[100px]" />
+      <div className="absolute top-[40%] left-[60%] w-[300px] h-[300px] rounded-full bg-sage-50/80 blur-[80px]" />
 
-  return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-hero-gradient">
-      {/* Background image overlay */}
-      <div className="absolute inset-0">
-        <img src={heroImage} alt="Farmácia de manipulação moderna" className="w-full h-full object-cover opacity-15" />
-        <div className="absolute inset-0 bg-hero-gradient opacity-90" />
-      </div>
+      {/* Thin decorative vertical line */}
+      <motion.div
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-28 bg-gradient-to-b from-transparent via-sand-400/60 to-transparent origin-top"
+      />
 
-      <div className="container relative z-10 py-20 lg:py-32">
+      <div className="container relative z-10 pt-36 pb-28 lg:pt-48 lg:pb-40">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-2 mb-8">
-
-            <Shield className="text-gold w-[33px] h-[33px]" />
-            <span className="font-medium text-gold text-3xl">Exclusivo para Farmácias de Manipulação</span>
+            transition={{ duration: 0.6 }}
+            className="inline-flex items-center gap-2.5 rounded-full border border-border bg-card/80 backdrop-blur-sm px-5 py-2 mb-12 shadow-soft"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-accent" />
+            <span className="font-body text-[11px] tracking-[0.18em] uppercase text-muted-foreground font-medium">
+              Exclusivo para Farmácias de Manipulação
+            </span>
           </motion.div>
 
           {/* Headline */}
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif leading-tight text-navy-foreground mb-6">
-
-            Como Farmácias de Manipulação Estão{" "}
-            <span className="text-gradient-gold">Aumentando o Volume de Pedidos</span>{" "}
-            Todos os Meses Com um Sistema de Captação e Recompra Automatizado
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="text-[2.75rem] sm:text-6xl lg:text-7xl xl:text-[5.5rem] font-display font-semibold leading-[1.05] text-foreground mb-8"
+          >
+            Transforme sua farmácia em uma máquina de{" "}
+            <span className="italic text-primary">pedidos recorrentes</span>
           </motion.h1>
+
+          {/* Ornamental divider */}
+          <motion.div
+            initial={{ opacity: 0, scaleX: 0 }}
+            animate={{ opacity: 1, scaleX: 1 }}
+            transition={{ duration: 0.8, delay: 0.35 }}
+            className="flex items-center justify-center gap-3 mb-8"
+          >
+            <div className="h-px w-12 bg-accent/40" />
+            <div className="w-1.5 h-1.5 rounded-full bg-accent/50" />
+            <div className="h-px w-12 bg-accent/40" />
+          </motion.div>
 
           {/* Subheadline */}
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg sm:text-xl text-navy-foreground/80 max-w-2xl mx-auto mb-10 font-semibold">
-
-            Implementamos tráfego pago estratégico + CRM inteligente para gerar novos pedidos diariamente e reativar clientes antigos — tudo no automático.
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="font-body text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-14 leading-relaxed font-light"
+          >
+            Tráfego pago estratégico + CRM inteligente para gerar novos pedidos
+            diariamente e reativar clientes antigos — tudo no automático.
           </motion.p>
 
           {/* CTA */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-
-            <button
-              onClick={scrollToCTA}
-              className="bg-cta-gradient text-gold-foreground font-semibold px-8 py-4 rounded-lg text-lg shadow-cta hover:scale-105 transition-transform duration-200 animate-pulse-glow">
-
-              Quero Aumentar os Pedidos da Minha Farmácia
-            </button>
+            transition={{ duration: 0.7, delay: 0.4 }}
+          >
+            <a
+              href="https://wa.me/351961342444?text=Ol%C3%A1%21%20Quero%20mais%20pedidos%20na%20minha%20farm%C3%A1cia%20de%20manipula%C3%A7%C3%A3o.%20Podem%20me%20explicar%20como%20funciona%20o%20sistema%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground font-body font-medium px-10 py-4 rounded-full text-[15px] tracking-wide shadow-soft hover:shadow-lifted hover:bg-sage-800 transition-all duration-500"
+            >
+              Quero Mais Pedidos na Minha Farmácia
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
           </motion.div>
 
           {/* Trust indicators */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
-
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="mt-28 flex flex-col sm:flex-row items-center justify-center divide-y sm:divide-y-0 sm:divide-x divide-border"
+          >
             {[
-            { icon: TrendingUp, text: "+300% em pedidos mensais" },
-            { icon: Users, text: "+50 farmácias atendidas" },
-            { icon: Shield, text: "Exclusividade por região" }].
-            map((item, i) =>
-            <div key={i} className="flex items-center gap-3 justify-center text-navy-foreground/70">
-                <item.icon className="w-5 h-5 text-gold" />
-                <span className="text-sm font-bold">{item.text}</span>
+              { icon: TrendingUp, value: "+300%", text: "em pedidos mensais" },
+              { icon: Users, value: "+50", text: "farmácias atendidas" },
+              { icon: Award, value: "100%", text: "exclusividade regional" },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-3 px-8 py-4 sm:py-0"
+              >
+                <item.icon className="w-4 h-4 text-accent" />
+                <span className="font-display text-2xl font-semibold text-foreground">
+                  {item.value}
+                </span>
+                <span className="font-body text-sm text-muted-foreground">
+                  {item.text}
+                </span>
               </div>
-            )}
+            ))}
           </motion.div>
         </div>
       </div>
-    </section>);
-
-};
+    </section>
+);
 
 export default HeroSection;
