@@ -24,8 +24,8 @@ const methods = [
     ),
     title: "WhatsApp Comercial",
     desc: "Estruturação completa do seu canal de atendimento para converter e reter.",
-    image: "https://images.unsplash.com/photo-1685586784800-42bac9c32db9?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Pessoa usando WhatsApp no smartphone",
+    image: "https://images.unsplash.com/photo-1644088379091-d574269d422f?auto=format&fit=crop&w=600&q=80",
+    imageAlt: "Rede abstrata de conexões digitais",
   },
   {
     icon: (
@@ -36,8 +36,8 @@ const methods = [
     ),
     title: "CRM Inteligente",
     desc: "Cada cliente rastreado, cada fórmula registrada, cada oportunidade aproveitada.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Dashboard de CRM com análise de dados",
+    image: "https://images.unsplash.com/photo-1762279389020-eeeb69c25813?auto=format&fit=crop&w=600&q=80",
+    imageAlt: "Visualização abstrata de dados e linhas luminosas",
   },
   {
     icon: (
@@ -63,8 +63,8 @@ const methods = [
     ),
     title: "Automação de Recompra",
     desc: "Lembretes automáticos quando a fórmula está acabando. Recompra no piloto automático.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Dashboard de automação e métricas",
+    image: "https://images.unsplash.com/photo-1744324509518-d61c11a4d509?auto=format&fit=crop&w=600&q=80",
+    imageAlt: "Circuito eletrônico abstrato em neon verde",
   },
   {
     icon: (
@@ -74,8 +74,8 @@ const methods = [
     ),
     title: "Remarketing Inteligente",
     desc: "Alcançamos quem visitou, quem comprou e quem parou — e trazemos todos de volta.",
-    image: "https://plus.unsplash.com/premium_photo-1725534268383-5798fcf09424?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Farmacêuticas interagindo com clientes",
+    image: "https://plus.unsplash.com/premium_photo-1754723960374-68c1bfefb7e7?auto=format&fit=crop&w=600&q=80",
+    imageAlt: "Mapa digital abstrato com conexões globais",
   },
 ];
 
