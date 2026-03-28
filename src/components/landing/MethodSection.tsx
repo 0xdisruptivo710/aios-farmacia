@@ -4,78 +4,91 @@ import { MagicCard } from "@/components/ui/magic-card";
 const methods = [
   {
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="12" r="10" />
-        <circle cx="12" cy="12" r="3" />
-        <path d="M12 2v3M12 19v3M2 12h3M19 12h3" strokeLinecap="round" />
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 7 12 8 12s8-6.75 8-12c0-4.42-3.58-8-8-8z" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="12" cy="10" r="1" fill="currentColor" />
       </svg>
     ),
     title: "Aquisição Local",
     desc: "Tráfego pago segmentado para atrair clientes da sua região diretamente para sua farmácia.",
-    image: "https://plus.unsplash.com/premium_photo-1661537565000-46b8b01437ee?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Farmacêutica atendendo cliente em farmácia moderna",
+    color: "bg-emerald-500/10",
+    iconColor: "text-emerald-600",
+    accent: "from-emerald-500/20 to-transparent",
   },
   {
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-        <path d="M8 9h8M8 13h4" strokeLinecap="round" />
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M8 12h.01M12 12h.01M16 12h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
     title: "WhatsApp Comercial",
     desc: "Estruturação completa do seu canal de atendimento para converter e reter.",
-    image: "https://images.unsplash.com/photo-1644088379091-d574269d422f?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Rede abstrata de conexões digitais",
+    color: "bg-green-500/10",
+    iconColor: "text-green-600",
+    accent: "from-green-500/20 to-transparent",
   },
   {
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="2" y="3" width="20" height="18" rx="2" />
-        <path d="M8 7h8M8 11h5M8 15h8" strokeLinecap="round" />
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M3 9h18" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M9 3v18" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="15" cy="15" r="2" fill="currentColor" opacity="0.4" />
+        <circle cx="15" cy="12" r="1" fill="currentColor" opacity="0.2" />
       </svg>
     ),
     title: "CRM Inteligente",
     desc: "Cada cliente rastreado, cada fórmula registrada, cada oportunidade aproveitada.",
-    image: "https://images.unsplash.com/photo-1762279389020-eeeb69c25813?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Visualização abstrata de dados e linhas luminosas",
+    color: "bg-blue-500/10",
+    iconColor: "text-blue-600",
+    accent: "from-blue-500/20 to-transparent",
   },
   {
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2" />
-        <rect x="8" y="2" width="8" height="4" rx="1" />
-        <path d="M9 14l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+        <rect x="2" y="6" width="6" height="12" rx="1" stroke="currentColor" strokeWidth="1.5" />
+        <rect x="9" y="4" width="6" height="16" rx="1" stroke="currentColor" strokeWidth="1.5" />
+        <rect x="16" y="8" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M5 10v4M12 8v8M19 11v2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
     title: "Segmentação por Fórmula",
     desc: "Comunicação personalizada para cada tipo de manipulado e perfil de cliente.",
-    image: "https://plus.unsplash.com/premium_photo-1677604592144-14aebecbbe5f?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Profissional manipulando fórmula em laboratório",
+    color: "bg-purple-500/10",
+    iconColor: "text-purple-600",
+    accent: "from-purple-500/20 to-transparent",
   },
   {
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M17 1l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M3 11V9a4 4 0 014-4h14" />
-        <path d="M7 23l-4-4 4-4" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M21 13v2a4 4 0 01-4 4H3" />
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M14 10l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M10 10h4v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
     title: "Automação de Recompra",
     desc: "Lembretes automáticos quando a fórmula está acabando. Recompra no piloto automático.",
-    image: "https://images.unsplash.com/photo-1744324509518-d61c11a4d509?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Circuito eletrônico abstrato em neon verde",
+    color: "bg-amber-500/10",
+    iconColor: "text-amber-600",
+    accent: "from-amber-500/20 to-transparent",
   },
   {
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeLinecap="round" strokeLinejoin="round" />
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M4 22v-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="17" cy="7" r="3" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M17 5v4M15 7h4" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
       </svg>
     ),
     title: "Remarketing Inteligente",
     desc: "Alcançamos quem visitou, quem comprou e quem parou — e trazemos todos de volta.",
-    image: "https://plus.unsplash.com/premium_photo-1754723960374-68c1bfefb7e7?auto=format&fit=crop&w=600&q=80",
-    imageAlt: "Mapa digital abstrato com conexões globais",
+    color: "bg-rose-500/10",
+    iconColor: "text-rose-600",
+    accent: "from-rose-500/20 to-transparent",
   },
 ];
 
@@ -106,21 +119,15 @@ const MethodSection = () => (
         {methods.map((method, i) => (
           <BlurFade key={i} delay={0.1 + i * 0.08}>
             <MagicCard className="h-full group cursor-default">
-              {/* Image */}
-              <div className="relative h-40 overflow-hidden">
-                <img
-                  src={method.image}
-                  alt={method.imageAlt}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
-                <div className="absolute top-3 left-3 w-10 h-10 rounded-lg bg-white/90 backdrop-blur-sm flex items-center justify-center text-primary shadow-sm">
+              <div className="p-7 relative overflow-hidden">
+                {/* Gradient accent top */}
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${method.accent}`} />
+
+                {/* Icon */}
+                <div className={`w-14 h-14 rounded-2xl ${method.color} flex items-center justify-center mb-5 ${method.iconColor} group-hover:scale-110 transition-transform duration-300`}>
                   {method.icon}
                 </div>
-              </div>
 
-              {/* Content */}
-              <div className="p-6 pt-2">
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                   {method.title}
                 </h3>
