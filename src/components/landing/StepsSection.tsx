@@ -120,20 +120,39 @@ const StepsSection = () => (
         </div>
       </div>
 
-      {/* Process image */}
+      {/* Process summary */}
       <BlurFade delay={0.6}>
-        <div className="mt-16 max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-lifted relative">
-          <img
-            src="https://images.unsplash.com/photo-1724860755552-55f1c46f763d?auto=format&fit=crop&w=1200&q=80"
-            alt="Profissional manipulando fórmulas em laboratório"
-            className="w-full h-64 object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-sage-900/70 via-sage-900/40 to-transparent flex items-center">
-            <div className="px-10">
+        <div className="mt-16 max-w-3xl mx-auto rounded-2xl bg-gradient-to-r from-sage-800 to-sage-700 p-8 lg:p-10 shadow-lifted relative overflow-hidden">
+          {/* Decorative elements */}
+          <div className="absolute top-0 right-0 w-40 h-40 rounded-full bg-bronze-400/10 blur-[60px]" />
+          <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full bg-sage-500/20 blur-[50px]" />
+
+          <div className="relative z-10 flex flex-col sm:flex-row items-center gap-8">
+            {/* Icon: diagnostic → result path */}
+            <div className="flex items-center gap-3 shrink-0">
+              <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-bronze-300">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="M21 21l-4.35-4.35" strokeLinecap="round" />
+                </svg>
+              </div>
+              <div className="text-bronze-300">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-emerald-300">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+            </div>
+
+            <div>
               <p className="font-display text-2xl text-white font-semibold mb-2">
                 Do diagnóstico ao resultado
               </p>
-              <p className="font-body text-white/70 text-sm max-w-sm">
+              <p className="font-body text-sage-200 text-sm max-w-sm">
                 Em 30 dias, seu sistema de pedidos previsíveis estará funcionando e gerando resultados.
               </p>
             </div>

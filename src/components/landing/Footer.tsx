@@ -6,22 +6,14 @@ const Footer = () => (
     <div className="container">
       <BlurFade>
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-primary-foreground">
-                <path d="M9 2h6l1 3H8L9 2z" fill="currentColor" opacity="0.6" />
-                <path d="M5 7h14a1 1 0 011 1v1a8 8 0 01-5.5 7.6L15 21H9l.5-4.4A8 8 0 014 9V8a1 1 0 011-1z" fill="currentColor" />
-              </svg>
-            </div>
-            <div>
-              <span className="font-display text-lg font-semibold text-foreground tracking-tight">
-                AIOS
-              </span>
-              <span className="mx-2 text-border">|</span>
-              <span className="font-body text-xs text-muted-foreground">
-                Sistema de Pedidos Previsíveis
-              </span>
-            </div>
+          <div className="flex items-center gap-2">
+            <span className="font-display text-lg font-semibold text-foreground tracking-tight">
+              AIOS
+            </span>
+            <span className="mx-1 text-border">|</span>
+            <span className="font-body text-xs text-muted-foreground">
+              Sistema de Pedidos Previsíveis
+            </span>
           </div>
 
           <div className="flex items-center gap-6">
